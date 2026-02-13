@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera página web responsive</title>
+</head>
+<style>
+    body{
+        margin:0;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.5;
+
+    }
+
+    header,nav,main,footer{
+        padding: 15px;
+    }
+    header{
+        background-color: #333;
+        color: white;
+    }
+    nav{
+        background-color: #eee;
+    }
+    footer{
+        background-color: #333;
+        color: white;
+        text-align: center;
+    }
+
+    .contenedor{
+        display: flex;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .col{
+        background-color: #f6f6f6;
+        padding: 15px;
+        flex:1;
+    }
+
+    @media(max-widht:700px){
+        .contenedor{
+            flex-direction: column;
+        }
+    }
+    nav a{
+        margin-right: 10px;
+        text-decoration: none;
+        color: #333;
+        text-align: center;
+    }
+    nav :hover{
+        text-decoration: underline;
+        background-color:cornflowerblue;
+    }
+    img{
+        height: auto;
+        display: block;
+        max-width: 100%;
+        min-width: 70%;
+        margin-left: 15%;
+        
+    }
+    
+
+
+
+
+
+
+
+</style>
+
+
+
+
+<body>
+
+<header>
+  <h1> Mi web responsive</h1>
+  <p> Ejemplo simple para emtender responsive</p>
+</header>
+
+<nav>
+    <a href="#">Inicio</a>
+    <a href="#">Servicios</a>
+    <a href="#">Contacto</a>
+</nav>
+
+<main>
+    <div class="contenedor">
+        <section class="col">
+            <h2> Sección 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos laboriosam omnis sunt, pariatur quod distinctio facilis rerum non dicta iusto quidem nihil dolor qui similique provident suscipit minima nobis numquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla labore nostrum itaque repudiandae neque id dolores? Quidem quasi expedita ad non dolores ullam, tempore atque aspernatur voluptates tenetur perferendis voluptas.</p>
+                <img src="https://i.pinimg.com/236x/65/fd/87/65fd87702d33e3546222f0e1c86df926.jpg" alt="Tortuga pequeña">
+            </section>
+
+        <section class="col">
+             <h2> Sección 2</h2>
+             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis numquam fuga vel? Praesentium maxime rem, asperiores similique veniam consectetur fugit, accusamus, veritatis aliquid laboriosam porro modi mollitia qui est repellendus.</p>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora vero temporibus dolorum nobis sit iusto corrupti totam eveniet suscipit? Quasi pariatur praesentium cupiditate sed. Sapiente nisi esse voluptatibus animi vel!</p>
+             <img src="https://tr.rbxcdn.com/180DAY-3b1988f8764897e21fd5e949dd3fc065/420/420/BackAccessory/Webp/noFilter" alt="Pibble">
+            </section>
+
+        
+       
+            
+    </div>
+</main>
+
+<footer>
+    <p> 2026-Ejemplo sencillo </p>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
